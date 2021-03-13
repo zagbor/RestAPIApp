@@ -7,5 +7,11 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/restappdb</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="PostgreSQL - restappdb@localhost" uuid="80440572-540d-48cd-a44b-855678ea8010">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/restappdb</jdbc-url>
+    </data-source>
   </component>
 </project>

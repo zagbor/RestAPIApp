@@ -8,7 +8,6 @@ import zagbor.practice.model.Event;
 import zagbor.practice.model.File;
 import zagbor.practice.model.User;
 
-
 import java.util.Properties;
 
 
