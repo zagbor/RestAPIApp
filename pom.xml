@@ -6,7 +6,7 @@
 
     <groupId>ru.home</groupId>
     <artifactId>RestAPIApp</artifactId>
-    <version>1.0-RELEASE</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>tasks-webservice Maven Webapp</name>
@@ -108,7 +108,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-<!--                     <release>12</release> -->
+                    <release>12</release>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
