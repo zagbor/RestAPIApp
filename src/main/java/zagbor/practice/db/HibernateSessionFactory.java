@@ -27,7 +27,7 @@ public class HibernateSessionFactory {
 
 
     private static SessionFactory buildSessionFactory(Configuration configuration) {
-
+        serviceRegistryFactory();
         return configuration.buildSessionFactory();
     }
 
