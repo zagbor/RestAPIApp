@@ -40,9 +40,9 @@ public class HibernateSessionFactory {
         Configuration configuration = new Configuration();
         Properties settings = new Properties();
         settings.put(Environment.DRIVER, "org.postgresql.Driver");
-        settings.put(Environment.URL, "jdbc:postgresql://localhost:5432/restappdb");
-        settings.put(Environment.USER, "postgres");
-        settings.put(Environment.PASS, "root");
+        settings.put(Environment.URL, "jdbc:postgresql://ec2-54-162-119-125.compute-1.amazonaws.com:5432/d7qsecv49kh6is");
+        settings.put(Environment.USER, "ugjlvryoihjiuq");
+        settings.put(Environment.PASS, "3b07331420038a45b413da05fbb166b17df29f3a9d2d72820dc5130913bf20");
         settings.put(Environment.SHOW_SQL, "true");
         settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQLDialect");
         configuration.setProperties(settings);
