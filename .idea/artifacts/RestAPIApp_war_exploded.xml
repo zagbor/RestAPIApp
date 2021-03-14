@@ -14,12 +14,30 @@
           <element id="module-output" name="RestAPIApp" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.heroku.sdk:heroku-jdbc:0.1.0" />
+          <element id="library" level="project" name="Maven: com.sparkjava:spark-core:2.9.3" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-server:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-http:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-util:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-io:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-webapp:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-xml:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-servlet:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-security:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.websocket:websocket-server:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.websocket:websocket-common:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.websocket:websocket-client:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-client:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.websocket:websocket-servlet:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty.websocket:websocket-api:9.4.31.v20200723" />
+          <element id="library" level="project" name="Maven: com.sparkjava:spark-template-freemarker:2.7.1" />
+          <element id="library" level="project" name="Maven: org.freemarker:freemarker:2.3.26-incubating" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.1" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.0" />
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
           <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
-          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: com.zaxxer:HikariCP:3.4.5" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.14" />
           <element id="library" level="project" name="Maven: junit:junit:4.12" />
