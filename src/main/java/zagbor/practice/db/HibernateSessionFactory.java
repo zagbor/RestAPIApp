@@ -2,6 +2,8 @@ package zagbor.practice.db;
 
 
 import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import zagbor.practice.model.Event;
@@ -18,13 +20,23 @@ public class HibernateSessionFactory {
 
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
-            sessionFactory = HibernateSessionFactory.buildSessionFactory();
+            sessionFactory = HibernateSessionFactory.buildSessionFactory(configurationFactory());
         }
         return sessionFactory;
     }
 
 
-    private static SessionFactory buildSessionFactory() {
+    private static SessionFactory buildSessionFactory(Configuration configuration) {
+
+        return configuration.buildSessionFactory();
+    }
+
+    private static StandardServiceRegistry serviceRegistryFactory() {
+        return new StandardServiceRegistryBuilder()
+                .applySettings(configurationFactory().getProperties()).build();
+    }
+
+    private static Configuration configurationFactory() {
         Configuration configuration = new Configuration();
         Properties settings = new Properties();
         settings.put(Environment.DRIVER, "org.postgresql.Driver");
@@ -37,6 +49,8 @@ public class HibernateSessionFactory {
         configuration.addAnnotatedClass(Event.class);
         configuration.addAnnotatedClass(File.class);
         configuration.addAnnotatedClass(User.class);
-        return configuration.buildSessionFactory();
+
+        return configuration;
     }
+
 }
