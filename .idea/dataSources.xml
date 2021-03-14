@@ -7,11 +7,16 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://localhost:5432/restappdb</jdbc-url>
     </data-source>
-    <data-source source="LOCAL" name="PostgreSQL - restappdb@localhost" uuid="80440572-540d-48cd-a44b-855678ea8010">
+    <data-source source="LOCAL" name="PostgreSQL" uuid="e23fcdbb-ea8d-4f87-b427-17b7d89860e0">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/restappdb</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-54-162-119-125.compute-1.amazonaws.com:5432/d7qsecv49kh6is</jdbc-url>
+      <driver-properties>
+        <property name="ssl" value="true" />
+        <property name="sslmode" value="verify-ca" />
+        <property name="sslfactory" value="org.postgresql.ssl.NonValidatingFactory" />
+      </driver-properties>
     </data-source>
   </component>
 </project>
